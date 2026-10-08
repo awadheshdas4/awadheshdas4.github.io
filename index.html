@@ -1,214 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Awadhesh Das | Experimentalist</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f7fa;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        header {
-            background: #ffffff;
-            padding: 50px 20px 30px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 42px;
-            color: #1f2937;
-        }
-
-        header p {
-            font-size: 18px;
-            color: #555;
-            margin-top: 10px;
-        }
-
-        nav {
-            margin-top: 25px;
-        }
-
-        nav a {
-            margin: 0 12px;
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 25px;
-        }
-
-        section {
-            background: white;
-            padding: 30px;
-            margin-bottom: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-
-        h2 {
-            color: #1f2937;
-            border-bottom: 2px solid #2563eb;
-            padding-bottom: 8px;
-        }
-
-        a {
-            color: #2563eb;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .lab-images {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .lab-images img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #777;
-            font-size: 14px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awadhesh Das | Experimental Condensed Matter Physicist</title>
+<meta name="description" content="Experimental physicist studying quantum materials with nonlinear optical, ultrafast, and THz spectroscopies.">
+<style>
+:root{
+  --bg:#f3f5f7; --surface:#ffffff; --ink:#14212b; --muted:#52606b;
+  --accent:#0b5c6b; --line:#d5dce1;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#0f171d; --surface:#16212a; --ink:#e8eef2; --muted:#9aa8b3; --accent:#5cc3d4; --line:#2a3944; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.7;font-size:18px}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
+header{background:var(--surface);border-bottom:1px solid var(--line);padding:56px 0 24px}
+h1{margin:0;font-size:clamp(34px,6vw,52px);letter-spacing:-.01em;line-height:1.15}
+.role{margin:12px 0 0;font-size:20px;color:var(--muted);max-width:60ch}
+.focus{margin:6px 0 0;font-size:16px;color:var(--muted);font-family:Arial,Helvetica,sans-serif}
+nav{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:28px;font-family:Arial,Helvetica,sans-serif;font-size:15px}
+nav a{text-decoration:none;font-weight:600;padding:4px 0}
+nav a:hover{text-decoration:underline}
+main{padding:16px 0 8px}
+section{padding:36px 0;border-bottom:1px solid var(--line)}
+section:last-child{border-bottom:0}
+h2{margin:0 0 16px;font-size:26px}
+p{margin:0 0 14px;max-width:68ch}
+.topics{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.topics li{padding-left:16px;border-left:3px solid var(--accent);max-width:68ch}
+.topics strong{display:block;font-family:Arial,Helvetica,sans-serif;font-size:17px}
+.topics span{color:var(--muted);font-size:17px}
+.lab-images{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:18px}
+.lab-images img{width:100%;height:auto;border-radius:4px;display:block}
+.links{font-family:Arial,Helvetica,sans-serif;font-size:16px}
+.links a{margin-right:18px;font-weight:600}
+footer{padding:28px 0 40px;color:var(--muted);font-size:14px;font-family:Arial,Helvetica,sans-serif}
+</style>
 </head>
-
 <body>
 
 <header>
+  <div class="wrap">
     <h1>Awadhesh Das</h1>
-
-    <p>
-        Experimental Physicist | Nonlinear Optics | Ultrafast & THz Spectroscopy
-    </p>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#lab">Lab</a>
-        <a href="#publications">Publications</a>
-        <a href="Awadhesh__CV.pdf" target="_blank">CV</a>
-        <a href="#contact">Contact</a>
+    <p class="role">Experimental condensed matter physicist studying how light interacts with quantum materials.</p>
+    <p class="focus">Nonlinear optics · Ultrafast spectroscopy · THz emission</p>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#lab">Lab</a>
+      <a href="#publications">Publications</a>
+      <a href="Awadhesh__CV.pdf" target="_blank" rel="noopener">CV</a>
+      <a href="#contact">Contact</a>
     </nav>
+  </div>
 </header>
 
+<main class="wrap">
 
-<div class="container">
+  <section id="about">
+    <h2>About</h2>
+    <p>I am an experimental physicist working in condensed matter physics. I use nonlinear optical and ultrafast spectroscopies to study electronic order, collective phenomena, and light–matter interactions in quantum materials.</p>
+  </section>
 
-    <section id="about">
-        <h2>About Me</h2>
+  <section id="research">
+    <h2>Research</h2>
+    <ul class="topics">
+      <li>
+        <strong>Nonlinear optical spectroscopy</strong>
+        <span>Probing symmetry, electronic order, and hidden phases through the nonlinear optical response.</span>
+      </li>
+      <li>
+        <strong>Ultrafast pump-probe spectroscopy</strong>
+        <span>Tracking non-equilibrium dynamics and collective excitations on femtosecond to picosecond timescales.</span>
+      </li>
+      <li>
+        <strong>THz emission spectroscopy</strong>
+        <span>Measuring ultrafast charge, spin, and lattice responses through emitted terahertz radiation.</span>
+      </li>
+      <li>
+        <strong>Quantum materials</strong>
+        <span>Correlated, topological, and low-dimensional systems where electronic order emerges from collective behavior.</span>
+      </li>
+    </ul>
+  </section>
 
-        <p>
-            I am an experimental physicist working in condensed matter physics.
-            My research uses nonlinear optical and ultrafast spectroscopies to
-            study electronic order, collective phenomena, and light–matter
-            interactions in quantum materials.
-        </p>
-    </section>
+  <section id="lab">
+    <h2>Lab</h2>
+    <p>Optical spectroscopy setups used in my experiments.</p>
+    <div class="lab-images">
+      <img src="IMG_9392.jpeg" alt="Experimental optical setup in the laboratory" loading="lazy">
+      <img src="IMG_9402.jpeg" alt="Research laboratory with spectroscopy equipment" loading="lazy">
+    </div>
+  </section>
 
+  <section id="publications">
+    <h2>Publications</h2>
+    <p>A complete list of my papers is on <a href="https://scholar.google.com/citations?user=_GVzvccAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+  </section>
 
-    <section id="research">
-        <h2>Research</h2>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:awadheshdas4@gmail.com">awadheshdas4@gmail.com</a></p>
+    <p class="links">
+      <a href="https://github.com/awadheshdas4" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/awadhesh-das-802658244/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=_GVzvccAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+    </p>
+  </section>
 
-        <p>
-            My research interests include:
-        </p>
-
-        <ul>
-            <li>Nonlinear optical spectroscopy</li>
-            <li>Ultrafast pump-probe spectroscopy</li>
-            <li>THz emission spectroscopy</li>
-            <li>Quantum materials</li>
-        </ul>
-    </section>
-
-
-    <section id="lab">
-        <h2>Lab & Research</h2>
-
-        <p>
-            Experimental work and optical spectroscopy setups in the laboratory.
-        </p>
-
-        <div class="lab-images">
-            <img src="IMG_9392.jpeg" alt="Experimental setup in the laboratory">
-            <img src="IMG_9402.jpeg" alt="Research laboratory">
-        </div>
-    </section>
-
-
-    <section id="publications">
-        <h2>Publications</h2>
-
-        <p>
-            My publications and research work can be found through
-            <a href="https://scholar.google.com/citations?user=_GVzvccAAAAJ&hl=en" target="_blank">
-                Google Scholar
-            </a>.
-        </p>
-    </section>
-
-
-    <section id="contact">
-        <h2>Contact</h2>
-
-        <p>
-            Email: <strong>awadheshdas4@gmail.com</strong>
-        </p>
-
-        <p>
-            Address: 1925 N 12th Street<br>
-            Philadelphia, PA 19122
-        </p>
-
-        <p>
-            Phone: (267) 334-9318
-        </p>
-
-        <p>
-            <a href="https://github.com/awadheshdas4" target="_blank">
-                GitHub
-            </a>
-            |
-            <a href="https://www.linkedin.com/in/awadhesh-das-802658244/" target="_blank">
-                LinkedIn
-            </a>
-        </p>
-    </section>
-
-</div>
-
+</main>
 
 <footer>
-    © 2026 Awadhesh Das
+  <div class="wrap">© 2026 Awadhesh Das</div>
 </footer>
 
 </body>
