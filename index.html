@@ -33,12 +33,19 @@ h1{margin:0;font-size:clamp(38px,6vw,60px);line-height:1.08;letter-spacing:-.02e
 .cta .primary{background:var(--probe);color:#06232a}
 .cta .ghost{border:1px solid #4a6676;color:#eaf2f6}
 .cta a:hover{filter:brightness(1.1)}
+
+/* Profile links under the CV button */
+.hero .links{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:18px;font:600 15px Arial,Helvetica,sans-serif}
+.hero .links a{color:var(--hero-ink);text-decoration:none;opacity:.85;padding-bottom:2px;border-bottom:1px solid #4a6676}
+.hero .links a:hover{opacity:1;border-bottom-color:var(--probe)}
+
 .fig{margin:0}
 .fig svg{width:100%;height:auto;display:block}
 .fig figcaption{margin-top:8px;font:13px Arial,Helvetica,sans-serif;color:#8fa6b3}
 .draw{stroke-dasharray:900;stroke-dashoffset:900;animation:draw 2.4s .3s ease-out forwards}
 @keyframes draw{to{stroke-dashoffset:0}}
 @media (prefers-reduced-motion:reduce){.draw{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+
 /* Profile photo */
 .id{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
 .photo{position:relative;width:132px;height:132px;border-radius:50%;overflow:hidden;flex:none;border:3px solid #4fd1e0;background:#1c3140;display:grid;place-items:center;font:700 40px Arial,Helvetica,sans-serif;color:#8fd9e4}
@@ -47,6 +54,7 @@ h1{margin:0;font-size:clamp(38px,6vw,60px);line-height:1.08;letter-spacing:-.02e
 .edu{list-style:none;margin:0;padding:0}
 .edu li{margin-bottom:20px;padding-left:16px;border-left:3px solid var(--accent);max-width:66ch}
 .edu .meta{color:var(--muted);font-size:16px}
+
 /* Sections */
 main{padding:8px 0}
 section{padding:52px 0;border-bottom:1px solid var(--line)}
@@ -66,7 +74,6 @@ p{margin:0 0 14px;max-width:66ch}
 .lab-images img{width:100%;height:auto;display:block;border-radius:4px}
 .contact{display:grid;grid-template-columns:200px 1fr;gap:36px}
 .contact h2{margin:0}
-.links{display:flex;flex-wrap:wrap;gap:10px 22px;font:600 16px Arial,Helvetica,sans-serif}
 footer{padding:28px 0 44px;color:var(--muted);font:14px Arial,Helvetica,sans-serif}
 
 @media (max-width:760px){
@@ -86,14 +93,14 @@ footer{padding:28px 0 44px;color:var(--muted);font:14px Arial,Helvetica,sans-ser
         <a href="#research">Research</a>
         <a href="#lab">Lab</a>
         <a href="#publications">Publications</a>
-        <a href="Awadhesh__CV.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="Awadhesh_CV.pdf" target="_blank" rel="noopener">CV</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
 
     <div class="hero-grid">
       <div>
-                <div class="id">
+        <div class="id">
           <div class="photo">
             <span aria-hidden="true">AD</span>
             <img src="aa.jpeg" alt="Portrait of Awadhesh Das" onerror="this.remove()">
@@ -112,10 +119,10 @@ footer{padding:28px 0 44px;color:var(--muted);font:14px Arial,Helvetica,sans-ser
           <a class="ghost" href="Awadhesh_CV.pdf" target="_blank" rel="noopener">Download CV</a>
         </div>
         <div class="links">
-        <a href="https://www.linkedin.com/in/awadhesh-das-802658244/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://orcid.org/0009-0006-5302-8818" target="_blank" rel="noopener">ORCID</a>
-        <a href="https://scholar.google.com/citations?user=_GVzvccAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
-      </div>
+          <a href="https://www.linkedin.com/in/awadhesh-das-802658244/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://orcid.org/0009-0006-5302-8818" target="_blank" rel="noopener">ORCID</a>
+          <a href="https://scholar.google.com/citations?user=_GVzvccAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        </div>
       </div>
 
       <figure class="fig">
@@ -153,7 +160,8 @@ footer{padding:28px 0 44px;color:var(--muted);font:14px Arial,Helvetica,sans-ser
       <p>I am an experimental physicist working in condensed matter physics. My research uses nonlinear optical and ultrafast spectroscopies to study electronic order, collective phenomena, and light–matter interactions in quantum materials.</p>
     </div>
   </section>
-    <section id="education" class="about">
+
+  <section id="education" class="about">
     <h2>Education</h2>
     <div>
       <ul class="edu">
@@ -199,7 +207,7 @@ footer{padding:28px 0 44px;color:var(--muted);font:14px Arial,Helvetica,sans-ser
 
   <section id="lab">
     <h2>Lab</h2>
-        <p>Ultrafast laser and THz spectroscopy setups.</p>
+    <p>Ultrafast laser and THz spectroscopy setups.</p>
     <div class="lab-images">
       <img src="IMG_9392.jpeg" alt="Experimental optical setup in the laboratory" loading="lazy">
       <img src="IMG_9402.jpeg" alt="Research laboratory with spectroscopy equipment" loading="lazy">
@@ -217,8 +225,7 @@ footer{padding:28px 0 44px;color:var(--muted);font:14px Arial,Helvetica,sans-ser
     <h2>Contact</h2>
     <div>
       <p>Email: <a href="mailto:awadheshdas4@gmail.com">awadheshdas4@gmail.com</a></p>
-      <p> Department of Physics <br> Temple University <br> Philadelphia, PA 19122 </p>
-      
+      <p>Department of Physics<br>Temple University<br>Philadelphia, PA 19122</p>
     </div>
   </section>
 
